@@ -1,0 +1,129 @@
+:root {
+  --main-font:"Poppins", sans-serif;
+  --main-color:#a4c639;
+  --second-color:#f7f7f7;
+  --p-color:#666;
+  --dark-color:#1e1e1e;
+  --dark-second-color:#232323;
+  --dark-third-color:#343434;
+  --fw-light:300;
+  --fw-medium:500;
+  --fw-bold:700;
+  --hover-transition:all .3s linear;
+}
+
+* {
+  font-family: var(--main-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--p-color);
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+  font-weight: var(--fw-medium) !important;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+span {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header {
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar-nav .nav-link {
+  margin: 0 10px;
+  color: #fff;
+}
+header .navbar-nav .nav-link.active, header .navbar-nav .nav-link:hover {
+  color: var(--main-color) !important;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.landing .img-box img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.landing .crousel-item-info {
+  position: absolute;
+  top: 50%;
+  left: 7rem;
+  max-width: 600px;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+.landing .crousel-item-info h5 {
+  margin-bottom: 10px;
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.landing .crousel-item-info h1 {
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 3rem;
+}
+.landing .crousel-item-info p {
+  color: #fff;
+}
+.landing .crousel-item-info a {
+  color: var(--main-color);
+}
+
+.header-carousel-button {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+}
+
+.carousel-control-prev {
+  left: 1rem;
+}
+
+.carousel-control-next {
+  right: 1rem;
+}/*# sourceMappingURL=main.css.map */

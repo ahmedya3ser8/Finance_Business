@@ -1,0 +1,17 @@
+header {
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  .navbar-nav .nav-link {
+    margin: 0 10px;
+    color: #fff;
+    &.active,
+    &:hover {
+      color: var(--main-color) !important;
+      border-bottom: 1px solid var(--main-color);
+    }
+  }
+}

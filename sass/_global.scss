@@ -1,0 +1,44 @@
+@function rem($value) {
+  $remvalue: ($value / 16) + rem;
+  @return $remvalue;
+}
+* {
+  font-family: var(--main-font);
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: rem(16);
+  color: var(--p-color);
+  line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+}
+h1 {
+  font-size: rem(44);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+h2 {
+  font-size: rem(36);
+}
+h3 {
+  font-size: rem(24);
+}
+h4 {
+  font-size: rem(22);
+  font-weight:var(--fw-medium) !important;
+  margin-bottom: rem(16);
+}
+h5{
+  font-size: rem(20);
+  letter-spacing: 0.5px;
+}
+span {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

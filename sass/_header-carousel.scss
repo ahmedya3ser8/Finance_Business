@@ -1,0 +1,52 @@
+.landing {
+  .img-box {
+    img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+    }
+  }
+  .crousel-item-info {
+    position: absolute;
+    top: 50%;
+    left: 7rem;
+    max-width: 600px;
+    transform: translateY(-50%);
+    padding: 20px;
+    & h5 {
+      margin-bottom: 10px;
+      color: var(--main-color);
+      font-size: 1.5rem;
+    }
+    & h1 {
+      margin-bottom: 10px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 3rem;
+    }
+    & p {
+      color: #fff;
+    }
+    & a {
+      color: var(--main-color);
+    }
+  }
+}
+
+.header-carousel-button {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+}
+
+.carousel-control-prev {
+  left: 1rem;
+}
+
+.carousel-control-next {
+  right: 1rem;
+}
