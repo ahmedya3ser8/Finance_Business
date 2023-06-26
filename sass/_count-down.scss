@@ -1,0 +1,42 @@
+.count-down {
+  background-image: url(/assets/image/count-down.jpg);
+  background-size: cover;
+  .box-info {
+    > span {
+    display: block;
+    margin-bottom: 5px;
+    }
+    h2 {
+      > span {
+        color: var(--main-color);
+      }
+    }
+    a {
+      background-color: var(--main-color);
+      &:hover {
+        background-color: #fff;
+        color: #a4ca2c;
+      }
+    }
+  }
+  .count-box {
+    padding: 30px;
+    background-color: rgba(250,250,250,0.1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    span:first-child {
+      display: block;
+      margin-bottom: 0.7rem;
+      color: var(--main-color);
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    span:not(:first-child) {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
