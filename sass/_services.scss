@@ -43,13 +43,5 @@
     background-color: var(--second-color);
     text-align: center;
     padding: 20px;
-    a {
-      background-color: var(--main-color);
-      margin-bottom: 1.5rem;
-      &:hover {
-        background-color: #fff;
-        color: #a4ca2c;
-      }
-    }
   }
 }

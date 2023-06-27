@@ -8,6 +8,13 @@
 a {
   text-decoration: none;
 }
+.link-btn {
+  background-color: var(--main-color) !important;
+  &:hover {
+    background-color: #fff !important;
+    color: #a4ca2c !important;
+  }
+}
 p {
   font-size: rem(16);
   color: var(--p-color);

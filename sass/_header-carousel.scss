@@ -29,9 +29,6 @@
     & p {
       color: #fff;
     }
-    & a {
-      color: var(--main-color);
-    }
   }
 }
 
@@ -63,9 +60,6 @@
         color: #fff;
         margin-bottom: 0;
       }
-    }
-    a:hover {
-      color: var(--main-color);
     }
   }
 }
