@@ -1,0 +1,30 @@
+.contact-us {
+  form {
+    background-color: var(--main-color);
+    padding: 3rem;
+    padding-bottom: 1rem;
+    .form-control {
+      box-shadow: none !important;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      font-size: 0.8rem;
+      font-weight: var(--fw-medium);
+      color: #6a6a6a67 !important;
+      padding: 10px 15px;
+    }
+    textarea {
+      height: 200px;
+      resize: none;
+    }
+    .link-btn {
+      width: fit-content;
+      border: 2px solid #fff;
+      color: #fff !important;
+      &:hover {
+        color: var(--main-color) !important;
+        background-color: #fff !important;
+      }
+    }
+  }
+}

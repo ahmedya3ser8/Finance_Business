@@ -103,7 +103,7 @@
     </div>
   </section>
   <section class="services py-5">
-    <div class="main-title text-center">
+    <div class="main-title">
       <h2>Financial <span>Services</span></h2>
       <p>ALIQUAM ID URNA IMPERDIET LIBERO MOLLIS HENDRERIT</p>
     </div>
@@ -201,16 +201,18 @@
   <section class="card py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 position-relative">
-          <div class="card-img">
-            <img class="img-fluid" src="assets/image/more-info.jpg" alt="card-img">
-          </div>
-          <div class="img-effect">
-            <div class="effect left"></div>
-            <div class="effect right"></div>
+        <div class="col-lg-6 position-relative">
+          <div class="card-box">
+            <div class="card-img">
+              <img class="img-fluid" src="assets/image/more-info.jpg" alt="card-img">
+            </div>
+            <div class="img-effect">
+              <div class="effect left"></div>
+              <div class="effect right"></div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="box-info">
             <span class="text-dark">WHO WE ARE</span>
             <h2 class="text-dark">Get To Know About <span>Our Company</span></h2>
@@ -224,6 +226,137 @@
               nec dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt
             </p>
             <a class="btn btn-outline-light rounded-pill link-btn" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-us py-5">
+    <div class="main-title">
+      <h2>What They Say <span>About Us</span></h2>
+      <p>TESTIMONIALS FROM OUR GREATEST CLIENTS</p>
+    </div>
+    <div class="container">
+      <div id="carousel-testimonials" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-md-6">
+              <div class="carousel-card">
+                <div class="carousel-info">
+                  <h5>John Smith</h5>
+                  <span>MARKET SPECIALIST</span>
+                  <p>
+                    'In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc.
+                    Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi.'
+                  </p>
+                </div>
+                <div class="carousel-img">
+                  <img src="/assets/image/teams/team_01.jpg" class="rounded-circle" alt="team-img">
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-6">
+              <div class="carousel-card">
+                <div class="carousel-info">
+                  <h5>David Wood</h5>
+                  <span>CHIEF ACCOUNTANT</span>
+                  <p>
+                    'Ut ultricies maximus turpis, in sollicitudin ligula posuere vel.
+                    Donec finibus maximus neque, vitae egestas quam imperdiet nec.
+                    Proin nec mauris eu tortor consectetur tristique.'
+                  </p>
+                </div>
+                <div class="carousel-img">
+                  <img src="/assets/image/teams/team_02.jpg" class="rounded-circle" alt="team-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-6">
+              <div class="carousel-card">
+                <div class="carousel-info">
+                  <h5>Mary Houston</h5>
+                  <span> CHIEF FINANCIAL ANALYST</span>
+                  <p>
+                    'Nulla ullamcorper, ipsum vel condimentum congue,
+                    mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam.
+                    Pellentesque in sagittis lacus.'
+                  </p>
+                </div>
+                <div class="carousel-img">
+                  <img src="/assets/image/teams/team_03.jpg" class="rounded-circle" alt="team-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev carousel-btn" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next carousel-btn" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us py-5">
+    <div class="main-title">
+      <h2>Request A <span>Call Back</span></h2>
+      <p>ETIAM SUSCIPIT ANTE A ODIO CONSEQUAT</p>
+    </div>
+    <div class="container">
+      <form action="#">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <input class="form-control" type="email" name="mailaddress" id="mailaddress" placeholder="E-Mail Address" required>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <input class="form-control" type="text" name="subject" id="subject" placeholder="Subject">
+          </div>
+          <div class="col-lg-12">
+            <textarea class="form-control" name="message" id="message" placeholder="Your Message"></textarea>
+          </div>
+          <div class="col-lg-12 text-center">
+            <input class="form-control btn btn-outline-light rounded-pill link-btn" type="submit" value="Send Message">
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="banner py-5">
+    <div class="container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner-item">
+              <img src="assets/image/banner/glorix.svg" alt="banner-img">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-item">
+              <img src="assets/image/banner/rolf-leasing.svg" alt="banner-img">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-item">
+              <img src="assets/image/banner/toprak-leasing.svg" alt="banner-img">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-item">
+              <img src="assets/image/banner/unilabs.svg" alt="banner-img">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-item">
+              <img src="assets/image/banner/woocommerce.svg" alt="banner-img">
+            </div>
           </div>
         </div>
       </div>

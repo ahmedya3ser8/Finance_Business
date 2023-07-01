@@ -44,3 +44,17 @@ h5{
   font-size: rem(20);
   letter-spacing: 0.5px;
 }
+.main-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  span {
+    font-style: normal;
+    margin-left: 5px;
+    font-size: inherit;
+    color: var(--main-color) !important;
+  }
+  p {
+    color: #777;
+  }
+}

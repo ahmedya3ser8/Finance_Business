@@ -1,0 +1,31 @@
+.banner {
+  background-color: var(--second-color);
+  .carousel-inner {
+    .carousel-item-end.active,
+    .carousel-item-next {
+      transform: translateX(20%);
+    }
+    .carousel-item-start.active,
+    .carousel-item-prev {
+      transform: translateX(-20%);
+    }
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item-end {
+      display: flex;
+    }
+    .carousel-item-end,
+    .carousel-item-start {
+      transform: translateX(0);
+    }
+    .banner-item {
+      margin: auto;
+      padding: 0 2rem;
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}
