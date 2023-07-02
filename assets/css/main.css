@@ -377,4 +377,75 @@ header .navbar-nav .nav-link.active, header .navbar-nav .nav-link:hover {
 .banner .carousel-inner .banner-item img {
   width: 120px;
   height: 120px;
+}
+
+footer {
+  background-color: var(--dark-second-color);
+}
+footer .row .title {
+  color: var(--main-color);
+}
+footer .row p {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+footer .row h5 {
+  margin-bottom: 1rem;
+}
+footer .row .social-media li a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--hover-transition);
+}
+footer .row .social-media li a:hover {
+  background-color: var(--main-color);
+}
+footer .row .links li {
+  padding: 10px 0;
+}
+footer .row .links li a {
+  transition: var(--hover-transition);
+}
+footer .row .links li a:hover {
+  color: var(--main-color) !important;
+  padding-left: 10px;
+}
+footer .row .links li a svg {
+  margin-right: 5px;
+}
+footer .row form .form-control {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--dark-color) !important;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  font-weight: var(--fw-medium);
+}
+footer .row form textarea {
+  height: 90px;
+  resize: none;
+}
+footer .row form .link-btn {
+  width: fit-content;
+  color: #fff !important;
+}
+footer .row form .link-btn:hover {
+  color: var(--main-color) !important;
+}
+footer .footer-copyright {
+  background-color: var(--dark-third-color);
+  padding: 1rem;
+  margin-bottom: 0;
+}
+footer .footer-copyright span {
+  color: var(--main-color);
 }/*# sourceMappingURL=main.css.map */
