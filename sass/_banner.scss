@@ -9,6 +9,16 @@
     .carousel-item-prev {
       transform: translateX(-20%);
     }
+    @media (max-width: 576px) {
+      .carousel-item-end.active,
+      .carousel-item-next {
+        transform: translateX(50%);
+      }
+      .carousel-item-start.active,
+      .carousel-item-prev {
+        transform: translateX(-50%);
+      }
+    }
     .carousel-item.active,
     .carousel-item-next,
     .carousel-item-prev,

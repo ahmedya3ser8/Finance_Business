@@ -23,13 +23,26 @@
 }
 
 .box-info {
+  @media (max-width: 576px) {
+    & {
+      text-align: center;
+    }
+  }
   > span {
   display: block;
   margin-bottom: 5px;
   }
   h2 {
+    @media (max-width: 576px) {
+      & {
+        font-size: 1.8rem;
+      }
+    }
     > span {
       color: var(--main-color);
     }
+  }
+  a {
+    margin-bottom: 0.5rem;
   }
 }

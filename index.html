@@ -13,6 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="scroll-to-top">
+    <span class="up"></span>
+  </div>
+  <div class="scroller"></div>
   <header>
     <nav class="navbar navbar-expand-md">
       <div class="container">
@@ -25,23 +29,23 @@
         <div class="collapse navbar-collapse" id="header-nav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#landing">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="#">Our Services</a>
+              <a class="nav-link p-2 p-lg-3" href="#services">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="#">About Us</a>
+              <a class="nav-link p-2 p-lg-3" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="#">Contact Us</a>
+              <a class="nav-link p-2 p-lg-3" href="#contact-us">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <section class="landing">
+  <section class="landing" id="landing">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -50,7 +54,7 @@
           </div>
           <div class="crousel-item-info">
             <h5>we are ready to help you</h5>
-            <h1>Financial Analysis <br> & Consulting</h1>
+            <h1>Financial Analysis<br>& Consulting</h1>
             <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone.
               This is a multiple-page version with different HTML pages.
             </p>
@@ -63,7 +67,7 @@
           </div>
           <div class="crousel-item-info">
             <h5>we are here to support you</h5>
-            <h1>accounting <br> & management</h1>
+            <h1>accounting <br> &management</h1>
             <p>You are allowed to use this template for your company websites.
               You are NOT allowed to re-distribute this template ZIP file on any template download website.
               Please contact TemplateMo for more detail.
@@ -77,7 +81,7 @@
           </div>
           <div class="crousel-item-info">
             <h5>we have solid background</h5>
-            <h1>market Analysis <br> & statistics</h1>
+            <h1>market Analysis <br>& statistics</h1>
             <p>You can download, edit and use this layout for your business website.
               Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.
             </p>
@@ -102,7 +106,7 @@
       <a class="btn btn-outline-light rounded-pill link-btn" href="contact.html">Contact Us</a>
     </div>
   </section>
-  <section class="services py-5">
+  <section class="services py-5" id="services">
     <div class="main-title">
       <h2>Financial <span>Services</span></h2>
       <p>ALIQUAM ID URNA IMPERDIET LIBERO MOLLIS HENDRERIT</p>
@@ -231,7 +235,7 @@
       </div>
     </div>
   </section>
-  <section class="about-us py-5">
+  <section class="about-us py-5" id="about-us">
     <div class="main-title">
       <h2>What They Say <span>About Us</span></h2>
       <p>TESTIMONIALS FROM OUR GREATEST CLIENTS</p>
@@ -240,7 +244,7 @@
       <div id="carousel-testimonials" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="carousel-card">
                 <div class="carousel-info">
                   <h5>John Smith</h5>
@@ -251,13 +255,13 @@
                   </p>
                 </div>
                 <div class="carousel-img">
-                  <img src="/assets/image/teams/team_01.jpg" class="rounded-circle" alt="team-img">
+                  <img src="assets/image/teams/team_01.jpg" class="rounded-circle" alt="team-img">
                 </div>
               </div>
-              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="carousel-card">
                 <div class="carousel-info">
                   <h5>David Wood</h5>
@@ -269,13 +273,13 @@
                   </p>
                 </div>
                 <div class="carousel-img">
-                  <img src="/assets/image/teams/team_02.jpg" class="rounded-circle" alt="team-img">
+                  <img src="assets/image/teams/team_02.jpg" class="rounded-circle" alt="team-img">
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="carousel-card">
                 <div class="carousel-info">
                   <h5>Mary Houston</h5>
@@ -287,7 +291,7 @@
                   </p>
                 </div>
                 <div class="carousel-img">
-                  <img src="/assets/image/teams/team_03.jpg" class="rounded-circle" alt="team-img">
+                  <img src="assets/image/teams/team_03.jpg" class="rounded-circle" alt="team-img">
                 </div>
               </div>
             </div>
@@ -302,7 +306,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-us py-5">
+  <section class="contact-us py-5" id="contact-us">
     <div class="main-title">
       <h2>Request A <span>Call Back</span></h2>
       <p>ETIAM SUSCIPIT ANTE A ODIO CONSEQUAT</p>

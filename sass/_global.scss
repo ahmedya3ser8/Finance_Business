@@ -58,3 +58,46 @@ h5{
     color: #777;
   }
 }
+
+.scroll-to-top {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  z-index: 9999;
+}
+.scroll-to-top .up {
+  background: linear-gradient(to right, var(--main-color) 50%, #bada53 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  transition: var(--hover-transition);
+  cursor: pointer;
+}
+.scroll-to-top:hover .up {
+  background-position: left bottom;
+}
+.scroll-to-top .up::before {
+  font-family: "FontAwesome";
+  content: "\f102";
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+
+.scroller {
+  background-color: var(--main-color);
+  width: 0;
+  height: 3px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
