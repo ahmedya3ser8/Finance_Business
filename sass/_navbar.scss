@@ -22,9 +22,14 @@ header {
     }
   }
   .navbar-toggler {
-    box-shadow: none;
-    border: none;
+    box-shadow: none !important;
+    border: none !important;
     color: #fff;
+    @media (max-width: 767px) {
+      & {
+        color: #000;
+      }
+    }
   }
   .navbar-nav .nav-link {
     margin: 0 10px;

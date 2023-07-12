@@ -23,6 +23,9 @@ a {
 .link-btn {
   background-color: var(--main-color) !important;
 }
+.link-btn.active {
+  color: #fff !important;
+}
 .link-btn:hover {
   background-color: #fff !important;
   color: #a4ca2c !important;
@@ -77,6 +80,91 @@ h5 {
 }
 .main-title p {
   color: #777;
+}
+
+section {
+  overflow: hidden;
+}
+
+.animate {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.animateRight {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: 1s;
+}
+
+.animateLeft {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1.5s;
+}
+
+.animate.active,
+.animateRight.active,
+.animateLeft.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background-color: var(--main-color);
+  transition: 1s;
+}
+
+.loader,
+.loader-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: var(--second-color);
+  border: 6px solid var(--second-color);
+  border-radius: 50%;
+}
+
+.loader-circle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--second-color) 30%, var(--main-color));
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader-circle::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  border-radius: 50%;
+  background-color: var(--second-color);
 }
 
 .scroll-to-top {
@@ -150,9 +238,14 @@ header.fixed-nav .nav-link {
   color: var(--dark-color) !important;
 }
 header .navbar-toggler {
-  box-shadow: none;
-  border: none;
+  box-shadow: none !important;
+  border: none !important;
   color: #fff;
+}
+@media (max-width: 767px) {
+  header .navbar-toggler {
+    color: #000;
+  }
 }
 header .navbar-nav .nav-link {
   margin: 0 10px;
@@ -168,6 +261,7 @@ header .navbar-nav .nav-link.active, header .navbar-nav .nav-link:hover {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  object-fit: cover;
 }
 .landing .crousel-item-info {
   position: absolute;
@@ -382,6 +476,16 @@ header .navbar-nav .nav-link.active, header .navbar-nav .nav-link:hover {
 .about-us .carousel-inner .carousel-item-start.active,
 .about-us .carousel-inner .carousel-item-prev {
   transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .about-us .carousel-inner .carousel-item-end.active,
+  .about-us .carousel-inner .carousel-item-next {
+    transform: translateX(100%);
+  }
+  .about-us .carousel-inner .carousel-item-start.active,
+  .about-us .carousel-inner .carousel-item-prev {
+    transform: translateX(-100%);
+  }
 }
 .about-us .carousel-inner .carousel-item.active,
 .about-us .carousel-inner .carousel-item-next,
